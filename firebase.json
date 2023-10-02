@@ -1,0 +1,9 @@
+{
+  "hosting": [
+    {
+      "target": "surveillance_reservoir",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "surveillance-reservoir": {
+      "hosting": {
+        "surveillance_reservoir": [
+          "surveillance-reservoir"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "surveillance-reservoir"
+  }
+}
