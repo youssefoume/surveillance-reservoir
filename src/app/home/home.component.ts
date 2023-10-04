@@ -9,16 +9,23 @@ import { Data } from '../data';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  private trashRef: AngularFireList<Data>;
+  private ref: AngularFireList<Data>;
+  data:Data[];
+  current:Data;
 
   constructor(private db: AngularFireDatabase) {
-    this.trashRef = db.list<Data>("/data");
+    this.ref = db.list<Data>("/data");
   }
 
   ngOnInit() {
-    this.trashRef
+    this.ref
       .snapshotChanges()
       .pipe(map((changes) => changes.map((c) => c.payload.val())))
-      .subscribe((data) => console.log(data));
+      .subscribe((data:Data[]) =>
+      {
+      this.data=data;
+      this.current=data[0];
+  });
+      
   }
 }

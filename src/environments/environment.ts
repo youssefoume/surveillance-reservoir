@@ -6,6 +6,7 @@ export const environment={
     apiKey: 'AIzaSyC_abYkNEzpEbvo722Uo5n77xuK-tAljh0',
     authDomain: 'surveillance-reservoir.firebaseapp.com',
     messagingSenderId: '425229845024',
+    databaseURL:"https://surveillance-reservoir-default-rtdb.europe-west1.firebasedatabase.app"
   },
     production: false
 };

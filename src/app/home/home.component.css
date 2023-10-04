@@ -1,0 +1,16 @@
+.level{
+    width: 100px;
+    height: 20px;
+    background-color:white;
+}
+.c{
+    width: 100px;
+    height: 400px;
+    background-color: black;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
