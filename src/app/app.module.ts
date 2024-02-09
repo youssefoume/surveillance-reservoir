@@ -8,11 +8,16 @@ import { environment } from '../environments/environment';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideDatabase,getDatabase } from '@angular/fire/database';
 import { FIREBASE_OPTIONS } from '@angular/fire/compat';
-import { HomeComponent } from './home/home.component';
+
+import { BarrelBarComponent } from './barrel-bar/barrel-bar.component';
+import { HeaderComponent } from './header/header.component';
+import { HistoriqueComponent } from './historique/historique.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    BarrelBarComponent,
+    HeaderComponent,
+    HistoriqueComponent
   ],
   imports: [
     BrowserModule,

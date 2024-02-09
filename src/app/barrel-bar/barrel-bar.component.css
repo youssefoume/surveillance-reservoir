@@ -1,0 +1,98 @@
+.water-barrel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ajustez selon vos besoins */
+  }
+  
+  .water-barrel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    position: relative;
+  }
+  
+  .water-tank {
+    width: 200px;
+    height: 400px;
+    background-color: #ddd;
+    border: 2px solid #777;
+    position: relative;
+    border-top: none;
+  }
+  
+  .water-level {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    transition: height 0.5s;
+    background-color: #aeebf7; /* Couleur par défaut pour les niveaux 2-4 */
+  }
+  
+  .water-barrel.level-1 .water-level {
+    background-color: #ff0000; /* Rouge pour le niveau 1 */
+  }
+  
+  .water-barrel:hover .water-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .water-info {
+    display: none;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .info-text {
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  .date-info {
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+/* ... Autres styles ... */
+
+.water-barrel:hover .water-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .water-info {
+    display: none;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+  }
+  
+  .info-text {
+    width: 100px;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .date-info {
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+  }
+    

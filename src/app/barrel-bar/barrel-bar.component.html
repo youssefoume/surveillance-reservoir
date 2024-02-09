@@ -1,0 +1,12 @@
+<div class="water-barrel-container">
+    <div class="water-barrel" [ngClass]="{'level-1': level === 1}" [style.position]="'relative'">
+      <div class="water-tank">
+        <div class="water-level" [style.height.%]="level * 25"></div>
+      </div>
+      <div class="water-info">
+        <div class="info-text">Niveau {{ level }}</div>
+        <div class="date-info">{{ date }}</div>
+      </div>
+    </div>
+  </div>
+  

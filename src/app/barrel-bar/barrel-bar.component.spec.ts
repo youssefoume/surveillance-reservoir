@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HomeComponent } from './home.component';
+import { BarrelBarComponent } from './barrel-bar.component';
 
-describe('HomeComponent', () => {
-  let component: HomeComponent;
-  let fixture: ComponentFixture<HomeComponent>;
+describe('BarrelBarComponent', () => {
+  let component: BarrelBarComponent;
+  let fixture: ComponentFixture<BarrelBarComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [HomeComponent]
+      declarations: [BarrelBarComponent]
     });
-    fixture = TestBed.createComponent(HomeComponent);
+    fixture = TestBed.createComponent(BarrelBarComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
