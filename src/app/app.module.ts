@@ -12,6 +12,7 @@ import { FIREBASE_OPTIONS } from '@angular/fire/compat';
 import { BarrelBarComponent } from './barrel-bar/barrel-bar.component';
 import { HeaderComponent } from './header/header.component';
 import { HistoriqueComponent } from './historique/historique.component';
+import { NgChartsModule } from 'ng2-charts';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,6 +23,7 @@ import { HistoriqueComponent } from './historique/historique.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    NgChartsModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
     provideDatabase(() => getDatabase()),
