@@ -17,7 +17,6 @@ export class HistoriqueComponent {
   ngOnInit(): void {
     this.dataService.getData().subscribe((data) => {
       this.data = data;
-      console.log(this.data);
       const levelMapping = {
         "niveau 1": 1,
         "niveau 2": 2,

@@ -7,7 +7,7 @@ import { last } from 'rxjs';
   templateUrl: './barrel-bar.component.html',
   styleUrls: ['./barrel-bar.component.css']
 })
-export class BarrelBarComponent {
+export class BarrelBarComponent  {
  level: number=2 ;
   date: string = '2024-02-12';
   data: any[] = [];
@@ -17,9 +17,9 @@ export class BarrelBarComponent {
   ngOnInit(): void {
     this.dataService.getData().subscribe((data) => {
       this.data = data;
-      this.date=data.pop().date;
-      this.level=parseInt(data.pop().level.split(' ')[1]);
-      console.log(this.level);
+      this.date=this.data[this.data.length-1].date;
+      this.level=parseInt(this.data[this.data.length-1].level.split(' ')[1]);
+      
     });
   } 
 
