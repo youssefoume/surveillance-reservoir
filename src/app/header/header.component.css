@@ -1,0 +1,40 @@
+.navbar-brand img {
+    max-height: 40px;
+  }
+  .navbar-nav {
+    flex-grow: 1;
+    justify-content: center;
+  }
+  .navbar-nav .nav-link {
+    padding: .5rem 1rem;
+  }
+  .nav-link-icon {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-link-icon mat-icon {
+    margin-right: 8px; /* Ajustez cette valeur en fonction de vos besoins */
+  }
+  
+.nav-item:hover .nav-link {
+    background-color: #e0e0e0;
+  }
+  
+  .nav-item:hover mat-icon {
+    color: #007bff;
+  }
+  
+  .nav-link {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .nav-link-icon {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-link-icon mat-icon {
+    margin-right: 8px; /* Ajustez cette valeur en fonction de vos besoins */
+  }
+  

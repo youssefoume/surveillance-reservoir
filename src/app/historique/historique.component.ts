@@ -38,19 +38,19 @@ export class HistoriqueComponent {
         // Assign a color based on the numeric value
         switch (level) {
           case 1:
-            return 'purple';
+            return '#bf212f';
           case 2:
-            return 'blue';
+            return '#f9a73e';
           case 3:
-            return 'green';
+            return '#006f3c';
           case 4:
-            return 'orange';
+            return '#264b96';
           default:
             return 'black';
         }
       });
        const myChart = new Chart(ctx, {
-        type: 'line',
+        type: 'bar',
         data: {
           labels: dates,
           datasets: [{
@@ -58,8 +58,9 @@ export class HistoriqueComponent {
             data: levels,
             borderColor: 'rgba(75, 192, 192, 1)',
             borderWidth: 1,
-            pointBackgroundColor: colors,
-            fill: false
+            backgroundColor:colors
+            //pointBackgroundColor: colors,
+            //fill: false
           }]
         },
         options: {

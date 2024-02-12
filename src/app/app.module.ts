@@ -12,19 +12,27 @@ import { FIREBASE_OPTIONS } from '@angular/fire/compat';
 import { BarrelBarComponent } from './barrel-bar/barrel-bar.component';
 import { HeaderComponent } from './header/header.component';
 import { HistoriqueComponent } from './historique/historique.component';
+import { FooterComponent } from './footer/footer.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatIconModule } from '@angular/material/icon';
+import { AboutComponent } from './about/about.component';
 @NgModule({
   declarations: [
     AppComponent,
     BarrelBarComponent,
     HeaderComponent,
-    HistoriqueComponent
+    HistoriqueComponent,
+    FooterComponent,
+    AboutComponent
   ],
   imports: [
+    MatIconModule,
     BrowserModule,
     AppRoutingModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
     provideDatabase(() => getDatabase()),
+    BrowserAnimationsModule,
   ],
   providers: [{ provide: FIREBASE_OPTIONS, useValue: environment.firebase }],
   bootstrap: [AppComponent]
